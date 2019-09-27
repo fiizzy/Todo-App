@@ -1,0 +1,107 @@
+body{
+  background: rgb(0, 221, 236);
+  font-family:montserrat;
+  color:white;
+}
+h1{
+  text-align:center;
+}
+img.todoImage{
+  transform: scale();
+  position:absolute;
+  left:100px;
+  top:50px;
+  z-index:-1;
+  width: 30%;
+}
+div.main-box{
+  background: rgba(0, 134, 143, 0.842);
+  padding:20px;
+  display:flex;
+  justify-content:center;
+  align-content: center;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.9);
+  border-radius:5px;
+  flex-wrap: wrap;
+  width:500px;
+  margin:10px auto;
+  flex-direction: column;
+  text-align: left;
+  position:relative;
+}
+div.task{
+  align-content:flex-start;
+  position:relative;
+}
+input#task{
+  padding:15px 30px;
+  padding-left:5px;
+  flex-grow: 1;
+  background: rgb(235, 252, 255);
+  border:0px solid rgb(0, 102, 109);
+  border-radius:2px;
+  width:100%;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  height: 50px;
+  padding:10px;
+
+}
+.form{
+  padding:0px;
+  /* background: black; */
+  width: 100%;
+}
+input.btn{
+  padding:15px 30px;
+  background: rgb(0, 165, 177);
+  border-radius:2px;
+  border:0px solid rgb(0, 102, 109);
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.6);
+  margin-top:20px;
+  color:white;
+}
+input.reverse-priority{
+  text-align: right;
+}
+a.deleteIcon{
+  position:absolute;
+  right:20px;
+  cursor: pointer;
+}
+div.form-registered{
+  background:#00d71e;
+  color: white;
+  margin: 0px auto;
+  padding:0px;
+  width: 300px;
+  display: none;
+  text-align:center;
+}
+div.form-error{
+  background:#E60000;
+  color: white;
+  margin: 0px auto;
+  padding:0px;
+  width: 300px;
+  display: none;
+  text-align:center;
+}
+li.list{
+  list-style-type: none;
+}
+ul.task-list{
+  list-style: none;
+  padding: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  div.main-box{
+    width:100%;
+    box-sizing: border-box;
+  }
+  img.todoImage{
+    width: 50%;
+    top:300px;  }
+}

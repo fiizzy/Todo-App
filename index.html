@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" type="image/x-icon">
+  <title>To do app</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="animate.css">
+</script>
+</head>
+<body onload ="appui()">
+  <img src="todoImage.png" alt="" class="todoImage">
+  <div class="main-box">
+    <div class = "form-error animated shake" id = "error-message">
+        <p class = "form-error"><small>Please add a task</small></p> 
+    </div>
+    <div class = "form-registered animated shake" id =       "registered-message">
+        <p class = "form-registered"><small>Details added to register!</small></p> 
+    </div>
+    <h1>Todo App </h1><br>
+    <form class="form">
+        <div class="input" >
+          <input type="text"  id="task"><br>
+          <input type="submit" value="Add task" class="btn">
+          <input type="button" value="Clear All" class="btn clear-all" >
+        </div>
+    </form>
+  </div>
+  <ul class="task-list"></ul>
+  <script src= "appUI.js"></script>
+</body>
+
+</html>
